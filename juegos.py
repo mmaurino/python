@@ -21,6 +21,7 @@ else:
     archivo = open("jugadores.json", "a")
     datos={values[0]:{'juego':event,'fecha':fecha}}
     json.dump(datos, archivo) 
+    archivo.close()
 if event=='AHORCADO':
     import ahorcado
 elif event=='TATETI':
